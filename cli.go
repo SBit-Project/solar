@@ -35,7 +35,7 @@ var (
 type RPCPlatform int
 
 const (
-	RPCSBit     = iota
+	RPCSbit     = iota
 	RPCEthereum = iota
 )
 
@@ -62,7 +62,7 @@ func (c *solarCLI) RPCPlatform() RPCPlatform {
 	}
 
 	if *sbitRPC != "" {
-		return RPCSBit
+		return RPCSbit
 	}
 
 	return RPCEthereum
@@ -121,7 +121,7 @@ func (c *solarCLI) ContractsRepository() *contract.ContractsRepository {
 	return c.repo
 }
 
-func (c *solarCLI) SBitRPC() *sbit.RPC {
+func (c *solarCLI) SbitRPC() *sbit.RPC {
 	rpc, err := sbit.NewRPC(*sbitRPC)
 	if err != nil {
 		fmt.Println("Invalid SBIT RPC URL:", *sbitRPC)

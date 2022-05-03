@@ -1,8 +1,8 @@
 pragma solidity ^0.4.0;
 
-contract SBitTest {
+contract SbitTest {
    uint storedNumber;
-   function SBitTest() {
+   function SbitTest() {
        storedNumber=1;
    }
    function setNumber(uint number) public {

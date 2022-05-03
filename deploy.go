@@ -82,7 +82,7 @@ func init() {
 			switch solar.RPCPlatform() {
 			case RPCEthereum:
 				gasPrice = "1"
-			case RPCSBit:
+			case RPCSbit:
 				gasPrice = "40"
 			}
 		}

@@ -1,6 +1,6 @@
 pragma solidity ^0.5.1;
 
-contract SBitTest {
+contract SbitTest {
    uint storedNumber;
    constructor() public {
        storedNumber = 1;

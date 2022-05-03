@@ -18,7 +18,7 @@ func init() {
 	multiples := cli.Arg("multiples", "fund this number of identical utxos").Default("1").Int()
 
 	appTasks["prefund"] = func() (err error) {
-		rpc := solar.SBitRPC()
+		rpc := solar.SbitRPC()
 
 		repo := solar.ContractsRepository()
 
